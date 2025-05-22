@@ -44,5 +44,16 @@
 		"stdexcept": "cpp",
 		"streambuf": "cpp",
 		"typeinfo": "cpp"
-	}
+	},
+	"cSpell.words": [
+		"acum",
+		"deca",
+		"decametros",
+		"decámetros",
+		"Digite",
+		"hecto",
+		"hectometros",
+		"hectómetros",
+		"perimetro"
+	]
 }
