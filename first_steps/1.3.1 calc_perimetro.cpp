@@ -1,3 +1,5 @@
+// Metodología de la programación: Actividad 3 - Evidencia 1
+// Desarrollado por Luis Ariza
 /*
 Hacer un algoritmo que permita calcular el perímetro de una estructura y
 mostrarla en decímetros, para ello vamos a pedir tres datos en diferentes

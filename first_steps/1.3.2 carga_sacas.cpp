@@ -1,3 +1,5 @@
+// Metodología de la programación: Actividad 4 - Evidencia 2
+// Desarrollado por Luis Ariza
 /*
 Se requiere un programa que establezca un protocolo de carga de
 20 camiones diarios:

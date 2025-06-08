@@ -1,5 +1,12 @@
-// Luis Manuel Ariza Pineda
-// Actividad 4 - Evidencia 1
+// Conceptualization del lenguaje C++: Actividad 4 - Evidencia 1
+// Desarrollado por Luis Ariza
+/*
+Este programa solicita al usuario ingresar un número de notas y luego
+el programa calcula el promedio de las notas ingresadas y determina si el
+estudiante está aprobado o reprobado. Se asegura de que las notas estén en
+el rango válido (0.0 a 5.0). Si una nota no es válida, se pide nuevamente
+sin incrementar el contador de notas.
+*/
 
 #include <iostream>
 using namespace std;
@@ -32,9 +39,3 @@ int main() {
 
   return 0;
 }
-
-// Este programa solicita al usuario ingresar un número de notas y luego
-// El programa calcula el promedio de las notas ingresadas y determina si el
-// estudiante está aprobado o reprobado. Se asegura de que las notas estén en
-// el rango válido (0.0 a 5.0). Si una nota no es válida, se pide nuevamente
-// sin incrementar el contador de notas.

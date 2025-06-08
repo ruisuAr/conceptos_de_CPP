@@ -1,5 +1,10 @@
-// LUIS MANUEL ARIZA PINEDA
-// Actividad 4 - Evidencia 2
+// Conceptualization del lenguaje C++: Actividad 4 - Evidencia 2
+// Desarrollado por Luis Ariza
+/*
+Hacer un algoritmo que permita calcular el promedio de notas de un estudiante
+y que permita ingresar notas hasta que el usuario decida parar. Las notas deben
+estar entre 0.0 y 5.0, si se ingresa una nota fuera de este rango no sera valida.
+*/
 
 #include <iostream>
 using namespace std;

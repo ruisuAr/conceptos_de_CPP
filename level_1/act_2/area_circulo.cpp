@@ -1,5 +1,6 @@
 // Calcular area de un círculo
 // Desarrollado por Luis Manuel Ariza
+// Estructura del lenguaje C++: Actividad 2 - Evidencia 1
 
 #include <math.h>
 

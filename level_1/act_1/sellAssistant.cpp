@@ -1,5 +1,5 @@
 // Asistente de venta de Sofia
-// Actividad 1 - evidencia 2
+// Estructura del lenguaje C++: Actividad 1 - evidencia 2
 // Desarrollado por Luis Manuel Ariza Pineda
 
 #include <iostream>

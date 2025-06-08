@@ -44,9 +44,11 @@
 		"stdexcept": "cpp",
 		"streambuf": "cpp",
 		"typeinfo": "cpp",
-		"iomanip": "cpp"
+		"iomanip": "cpp",
+		"ctime": "cpp"
 	},
 	"cSpell.words": [
+		"aceleracion",
 		"acum",
 		"deca",
 		"decametros",
@@ -55,6 +57,11 @@
 		"hecto",
 		"hectometros",
 		"hectómetros",
-		"perimetro"
+		"multiplicacion",
+		"Multiplicacion",
+		"numeros",
+		"perimetro",
+		"tecnologia",
+		"vehiculo"
 	]
 }

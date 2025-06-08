@@ -1,5 +1,6 @@
 // Calcular area de un rectángulo
 // Desarrollado por Luis Manuel Ariza Pineda
+// Estructura del lenguaje C++: Actividad 2 - Evidencia 1
 
 #include <iostream>
 using namespace std;

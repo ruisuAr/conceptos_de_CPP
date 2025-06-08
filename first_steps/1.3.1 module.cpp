@@ -1,3 +1,7 @@
+// Metodología de la programación: Actividad 3 - Evidencia 1
+// Desarrollado por Luis Ariza
+// Hacer un algoritmo que permita determinar si un número es divisible por 5.
+
 #include <iostream>
 using namespace std;
 
