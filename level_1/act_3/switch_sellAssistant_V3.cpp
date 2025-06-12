@@ -1,24 +1,22 @@
-// Asistente de venta de Sofia, version 2
-// Estructura del lenguaje C++: Actividad 2 - Evidencia 2
+// Asistente de venta de Sofia, version 3
+// Estructura del lenguaje C++: Actividad 3 - Evidencia 2
 // Desarrollado por Luis Manuel Ariza Pineda
 
 #include <iostream>
 using namespace std;
 
 int main() {
-  int referencia, talla, cantidad{0}, costo, costoTotal, precioVenta,
-      precioTotal, utilidad, utilidadTotal;
+  int talla, cantidad{0}, costo, costoTotal, precioVenta, precioTotal, utilidad,
+      utilidadTotal, caso;
   float porcentajeUtilidad;
-  char descripcion[50], disponibilidad;
-  // Verificamos que la disponibilidad sea S o N
+  char referencia[15], descripcion[40], disponibilidad, tipo;
 
   cout << "ADMINISTRAR VENTAS DE ZAPATOS" << endl;
   cout << "==============================" << endl;
   cout << "Digite la referencia del zapato..." << endl;
-  cin >> referencia;
-  cin.ignore();  // Limpiar el buffer de entrada ('cin' anterior a getline)
+  cin.getline(referencia, 15);
   cout << "Digite una descripcion del zapato..." << endl;
-  cin.getline(descripcion, 50);
+  cin.getline(descripcion, 40);
   cout << "Digite la talla del zapato..." << endl;
   cin >> talla;
   cout << "Digite la S o N si esta disponible o no para la venta..." << endl;
@@ -29,22 +27,44 @@ int main() {
   }
   cout << "Digite el costo del zapato..." << endl;
   cin >> costo;
-  cout << "Digite el precio de venta del zapato..." << endl;
-  cin >> precioVenta;
-  // Calcular el costo total, precio total, utilidad y porcentaje de utilidad
-  costoTotal = costo * cantidad;
-  precioTotal = precioVenta * cantidad;
-  utilidad = precioVenta - costo;
-  utilidadTotal = utilidad * cantidad;
+  // Calcular la utilidad, precio de venta, y porcentaje de utilidad
+  if (costo <= 30000)
+    caso = 1;
+  else if (costo > 30000 && costo <= 60000)
+    caso = 2;
+  else if (costo > 60000)
+    caso = 3;
+
+  // Usar switch con la categoría
+  switch (caso) {
+    case 1:
+      tipo = 'A';
+      utilidad = costo * 0.5;
+      break;
+    case 2:
+      tipo = 'B';
+      utilidad = costo * 0.4;
+      break;
+    case 3:
+      tipo = 'C';
+      utilidad = costo * 0.3;
+      break;
+  }
   // Porcentaje de utilidad se calcula como (parte * 100) / total
   // En este caso, parte es la utilidad y total es el costo
   porcentajeUtilidad = (utilidad * 100) / costo;
+  precioVenta = costo + utilidad;
+  costoTotal = costo * cantidad;
+  precioTotal = precioVenta * cantidad;
+  utilidadTotal = utilidad * cantidad;
+
   // Limpiar la consola
   system("clear");
   // Mostrar los datos ingresados y calculados
   cout << "LOS DATOS REGISTRADOS SON LOS SIGUIENTES" << endl;
   cout << "=========================================\n" << endl;
   cout << "REFERENCIA: " << referencia << endl;
+  cout << "TIPO: " << tipo << endl;
   cout << "DESCRIPCION: " << descripcion << endl;
   cout << "TALLA: " << talla << endl;
   cout << "DISPONIBILIDAD: "
