@@ -51,6 +51,7 @@
 		"aceleracion",
 		"acum",
 		"APLICAC",
+		"cedula",
 		"deca",
 		"decametros",
 		"decámetros",
@@ -63,6 +64,7 @@
 		"numeros",
 		"perimetro",
 		"tecnologia",
+		"telefono",
 		"vehiculo"
 	]
 }
