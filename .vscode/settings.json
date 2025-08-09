@@ -66,5 +66,7 @@
 		"tecnologia",
 		"telefono",
 		"vehiculo"
-	]
+	],
+	"C_Cpp.errorSquiggles": "disabled",
+	"editor.fontFamily": "'Victor Mono', monospace"
 }
