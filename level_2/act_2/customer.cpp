@@ -4,6 +4,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
@@ -14,10 +15,11 @@ int main() {
   do {
     cout << "Digite cuantos productos desea agregar: ";
     cin >> no_productos;
+    cin.ignore();  // Limpiar el buffer de entrada
 
     for (int i = 0; i < no_productos; i++) {
       cout << "Ingrese el producto " << i + 1 << ": ";
-      cin >> productos[i];
+      getline(cin, productos[i]);
     }
     system("clear");  // Use "cls" for Windows
 
