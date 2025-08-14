@@ -14,22 +14,20 @@ void calcular_cuadrado(double lado);
 void calcular_rectangulo(double base, double altura);
 void calcular_triangulo(double base, double altura, double lado1, double lado2);
 void calcular_circulo(double radio);
-// const string &figura = "te presto la cadena para que la uses, pero sin
-// tocarla, y sin hacer una copia entera"
-void mostrarResultados(const string &figura);
+void mostrar_resultados(string figura);
 
 int main() {
   calcular_cuadrado(5);
-  mostrarResultados("Cuadrado");
+  mostrar_resultados("Cuadrado");
 
   calcular_rectangulo(4, 6);
-  mostrarResultados("Rectángulo");
+  mostrar_resultados("Rectángulo");
 
   calcular_triangulo(3, 4, 5, 6);
-  mostrarResultados("Triángulo");
+  mostrar_resultados("Triángulo");
 
   calcular_circulo(7);
-  mostrarResultados("Círculo");
+  mostrar_resultados("Círculo");
 
   return 0;
 }
@@ -54,14 +52,14 @@ void calcular_triangulo(double base, double altura, double lado1,
   perimetro = b + lado1 + lado2;
 }
 
-void calcular_triangulo(double radio) {
+void calcular_circulo(double radio) {
   double r = radio;  // variable local
   area = M_PI * pow(r, 2);
   perimetro = 2 * M_PI * r;
 }
 
 // Función para mostrar resultados
-void mostrar_resultados(const string &figura) {
+void mostrar_resultados(string figura) {
   cout << "Figura: " << figura << endl;
   cout << "Área: " << area << endl;
   cout << "Perímetro: " << perimetro << endl << endl;
