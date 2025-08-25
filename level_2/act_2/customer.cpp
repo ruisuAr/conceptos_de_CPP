@@ -33,7 +33,8 @@ int main() {
     cin >> respuesta;
     if (respuesta == 's' || respuesta == 'S') {
       system("clear");
-      cout << "Gracias por su compra ¡Que tenga un excelente dia!" << endl;
+      cout << "Gracias por su compra ¡Que tenga un excelente dia!"
+           << endl;
     }
 
   } while (respuesta == 'n' || respuesta == 'N');

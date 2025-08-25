@@ -33,7 +33,8 @@ int main() {
       cout << "\n";
     }
 
-    cout << "Presiona '0' si deseas calcular el total de los productos" << endl;
+    cout << "Presiona '0' si deseas calcular el total de los productos"
+         << endl;
     cout << "Presiona '1' si deseas generar una nueva lista\n(0/1): ";
     cin >> respuesta;
     if (respuesta == 0) {
@@ -44,7 +45,8 @@ int main() {
                     (1 - productos[i][2] / 100)
              << endl;
       }
-      cout << "\nGracias por preferirnos ¡Que tenga un excelente dia!" << endl;
+      cout << "\nGracias por preferirnos ¡Que tenga un excelente dia!"
+           << endl;
     }
   } while (respuesta == 1);
 }

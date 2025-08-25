@@ -20,7 +20,8 @@ int main() {
   cin >> cant_elementos;
   int lista[cant_elementos];
 
-  cout << "\nDIGITE LOS " << cant_elementos << " ELEMENTOS DEL ARREGLO" << endl;
+  cout << "\nDIGITE LOS " << cant_elementos << " ELEMENTOS DEL ARREGLO"
+       << endl;
   agregarElementos(lista, cant_elementos);
 
   system("clear");  // use "cls" if on Windows
@@ -40,6 +41,7 @@ void agregarElementos(int* arreglo, int cant_elementos) {
 
 void mostrarElementos(int* arreglo, int cant_elementos) {
   for (int i = 0; i < cant_elementos; i++) {
-    cout << "Elemento " << (i + 1) << ": " << pow(arreglo[i], 3) << endl;
+    cout << "Elemento " << (i + 1) << ": " << pow(arreglo[i], 3)
+         << endl;
   }
 }

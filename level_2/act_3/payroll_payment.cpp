@@ -13,8 +13,8 @@ int num_empleados;   // Número de empleados
 
 string nombres[MAX], cargos[MAX];
 long cedulas[MAX], telefonos[MAX];
-int salarios[MAX], horas_extras[MAX], desc_prestamo[MAX], ahorro_vol[MAX],
-    desc_SS[MAX], pago_total[MAX];
+int salarios[MAX], horas_extras[MAX], desc_prestamo[MAX],
+    ahorro_vol[MAX], desc_SS[MAX], pago_total[MAX];
 
 // Prototipos de funciones para diligenciar la información
 void empleado();
@@ -22,7 +22,8 @@ void labor_empleado();
 void calcular_pago();
 void mostrar_pago();
 
-int main() {
+int main()
+{
   cout << "Ingrese el numero de empleados: ";
   cin >> num_empleados;
   cin.ignore();  // limpiar buffer de entrada
@@ -37,8 +38,10 @@ int main() {
 }
 
 // Función para diligenciar datos del empleado
-void empleado() {
-  for (int i = 0; i < num_empleados; i++) {
+void empleado()
+{
+  for (int i = 0; i < num_empleados; i++)
+  {
     cout << "Empleado #" << i + 1 << "\n" << endl;
     cout << "Cedula: ";
     cin >> cedulas[i];
@@ -58,8 +61,10 @@ void empleado() {
 }
 
 // Función para diligenciar datos de labor del empleado
-void labor_empleado() {
-  for (int i = 0; i < num_empleados; i++) {
+void labor_empleado()
+{
+  for (int i = 0; i < num_empleados; i++)
+  {
     cout << "--- Datos de labor para " << nombres[i] << " ---" << endl;
     cout << "Horas extras laboradas: ";
     cin >> horas_extras[i];
@@ -75,8 +80,10 @@ void labor_empleado() {
 }
 
 // Función para calcular el pago total del empleado
-void calcular_pago() {
-  for (int i = 0; i < num_empleados; i++) {
+void calcular_pago()
+{
+  for (int i = 0; i < num_empleados; i++)
+  {
     int pagoHorasExtras = horas_extras[i] * (salarios[i] / 240);
     pago_total[i] = salarios[i] + pagoHorasExtras - desc_prestamo[i] -
                     ahorro_vol[i] - desc_SS[i];
@@ -84,9 +91,11 @@ void calcular_pago() {
 }
 
 // Función para mostrar el informe de pago de los empleados
-void mostrar_pago() {
+void mostrar_pago()
+{
   cout << "INFORME DE PAGO DE LOS EMPLEADOS\n";
-  for (int i = 0; i < num_empleados; i++) {
+  for (int i = 0; i < num_empleados; i++)
+  {
     cout << "\nEmpleado: " << nombres[i] << endl;
     cout << "Cedula: " << cedulas[i] << endl;
     cout << "Telefono: " << telefonos[i] << endl;

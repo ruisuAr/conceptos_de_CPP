@@ -22,10 +22,12 @@ int main() {
 
   system("clear");  // use "cls" if on Windows
 
-  cout << "El SALARIO MENSUAL ACTUAL es: $" << salario_anual / 12 << endl;
+  cout << "El SALARIO MENSUAL ACTUAL es: $" << salario_anual / 12
+       << endl;
   // Llamada a la función para calcular el nuevo salario anual
   calcularSalarioAnual(salario_anual, antiguedad);
-  cout << "El SALARIO MENSUAL del próximo año es: $" << salario_anual / 12;
+  cout << "El SALARIO MENSUAL del próximo año es: $"
+       << salario_anual / 12;
 
   return 0;
 }
