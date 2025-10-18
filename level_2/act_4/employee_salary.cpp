@@ -27,7 +27,7 @@ int main() {
   // Llamada a la función para calcular el nuevo salario anual
   calcularSalarioAnual(salario_anual, antiguedad);
   cout << "El SALARIO MENSUAL del próximo año es: $"
-       << salario_anual / 12;
+       << salario_anual / 12 << endl;
 
   return 0;
 }
