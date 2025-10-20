@@ -6,18 +6,19 @@
 using namespace std;
 
 int main() {
-  int a, vi, vf, t;
+    int a, vi, vf, t;
 
-  cout << "Ingresa la velocidad inicial en m/s" << endl;
-  cin >> vi;
-  cout << "Ingresa la velocidad final en m/s" << endl;
-  cin >> vf;
-  cout << "Ingresa el tiempo en segundos" << endl;
-  cin >> t;
-  // Formula para calcular la aceleración
-  a = (vf - vi) / t;
+    cout << "Ingresa la velocidad inicial en m/s" << endl;
+    cin >> vi;
+    cout << "Ingresa la velocidad final en m/s" << endl;
+    cin >> vf;
+    cout << "Ingresa el tiempo en segundos" << endl;
+    cin >> t;
+    // Formula para calcular la aceleración
+    a = (vf - vi) / t;
 
-  cout << "La aceleracion del vehiculo es de: " << a << "m/s^2" << endl;
+    cout << "La aceleracion del vehiculo es de: " << a << "m/s^2"
+         << endl;
 
-  return 0;
+    return 0;
 }

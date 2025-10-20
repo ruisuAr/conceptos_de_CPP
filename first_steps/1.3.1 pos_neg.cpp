@@ -1,21 +1,21 @@
 // Metodología de la programación: Actividad 3 - Evidencia 1
 // Desarrollado por Luis Ariza
-// Hacer un algoritmo que permita determinar si un número es positivo, negativo
-// o neutro.
+// Hacer un algoritmo que permita determinar si un número es positivo,
+// negativo o neutro.
 
 #include <iostream>  // Para std::cout, std::endl y std::cin
 using namespace std;
 
 int main() {
-  float number;
+    float number;
 
-  cout << "Ingrese un número: ";
-  cin >> number;
+    cout << "Ingrese un número: ";
+    cin >> number;
 
-  if (number == 0)
-    cout << "El '0' es un número neutro" << endl;
-  else if (number > 0)
-    cout << number << " es un numero positivo" << endl;
-  else
-    cout << number << " es un numero negativo" << endl;
+    if (number == 0)
+        cout << "El '0' es un número neutro" << endl;
+    else if (number > 0)
+        cout << number << " es un numero positivo" << endl;
+    else
+        cout << number << " es un numero negativo" << endl;
 }
