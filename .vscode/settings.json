@@ -45,11 +45,15 @@
 		"streambuf": "cpp",
 		"typeinfo": "cpp",
 		"iomanip": "cpp",
-		"ctime": "cpp"
+		"ctime": "cpp",
+		"compare": "cpp",
+		"concepts": "cpp",
+		"numbers": "cpp"
 	},
 	"cSpell.words": [
 		"aceleracion",
 		"acum",
+		"Alimentacion",
 		"APLICAC",
 		"cedula",
 		"deca",
@@ -59,15 +63,20 @@
 		"hecto",
 		"hectometros",
 		"hectómetros",
+		"Komodo",
+		"lagartote",
+		"Limentacion",
+		"mamifero",
 		"multiplicacion",
 		"Multiplicacion",
 		"numeros",
 		"perimetro",
 		"tecnologia",
 		"telefono",
-		"vehiculo"
+		"vehiculo",
+		"zoologico"
 	],
 	"C_Cpp.errorSquiggles": "disabled",
 	"docwriter.language": "Spanish",
-	"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4}"
+	"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4 }"
 }
