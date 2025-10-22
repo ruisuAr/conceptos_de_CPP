@@ -1,5 +1,4 @@
-// Metodología de la programación: Actividad 3 - Evidencia 1
-// Desarrollado por Luis Ariza
+// Metodología de la programación
 // Hacer un algoritmo que permita comparar dos números y mostrar cuál es
 // mayor, menor o si son iguales.
 

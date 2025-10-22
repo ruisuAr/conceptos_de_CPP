@@ -1,5 +1,4 @@
-// Conceptualization del lenguaje C++: Actividad 2 - Evidencia 2
-// Desarrollado por Luis Ariza
+// Conceptualization del lenguaje C++
 // Este programa genera una tabla de multiplicación para un número dado
 // hasta un límite especificado por el usuario.
 

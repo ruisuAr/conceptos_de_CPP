@@ -1,7 +1,6 @@
+// Módulo y estructura del lenguaje C++
 // Programa 2:
 // Calcular el salario mensual que un empleado recibirá el próximo año
-// Módulo y estructura del lenguaje C++: Actividad 4 - Evidencia 2
-// Desarrollado por Luis Manuel Ariza Pineda
 
 #include <iostream>
 using namespace std;

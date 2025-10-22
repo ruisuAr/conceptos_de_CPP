@@ -1,5 +1,4 @@
-// Metodología de la programación: Actividad 3 - Evidencia 1
-// Desarrollado por Luis Ariza
+// Metodología de la programación
 /*
 Hacer un algoritmo que permita calcular el perímetro de una estructura y
 mostrarla en decímetros, para ello vamos a pedir tres datos en
@@ -23,13 +22,12 @@ main() {
     cout << "Ingresa la cantidad en metros: ";
     cin >> metro;
 
-    dm_hm = hecto * 1000;  // Convertir hectómetros a decímetros
-    dm_Dm = deca * 100;    // Convertir decámetros a decímetros
-    dm_m = metro * 10;     // Convertir metros a decímetros
+    dm_hm = hecto * 1000;                 // Convertir hectómetros a decímetros
+    dm_Dm = deca * 100;                   // Convertir decámetros a decímetros
+    dm_m = metro * 10;                    // Convertir metros a decímetros
     perimeter_dm = dm_hm + dm_Dm + dm_m;  // Sumar todos los decímetros
 
-    cout << "El perímetro total en decímetros es: " << perimeter_dm
-         << endl;
+    cout << "El perímetro total en decímetros es: " << perimeter_dm << endl;
 
     return 0;
 }

@@ -1,13 +1,12 @@
+// Estructura del lenguaje C++
 // Asistente de venta de Sofia, version 3
-// Estructura del lenguaje C++: Actividad 3 - Evidencia 2
-// Desarrollado por Luis Manuel Ariza Pineda
 
 #include <iostream>
 using namespace std;
 
 int main() {
     int talla, cantidad{0}, costo, costoTotal, precioVenta, precioTotal,
-        utilidad, utilidadTotal;
+        utilidad, utilidadTotal, caso;
     float porcentajeUtilidad;
     char referencia[15], descripcion[40], disponibilidad, tipo;
 
@@ -28,15 +27,27 @@ int main() {
     cout << "Digite el costo del zapato..." << endl;
     cin >> costo;
     // Calcular la utilidad, precio de venta, y porcentaje de utilidad
-    if (costo <= 30000) {
-        tipo = 'A';              // Tipo A para costo <= 30,000
-        utilidad = costo * 0.5;  // Utilidad del 50% del costo
-    } else if (costo > 30000 && costo <= 60000) {
-        tipo = 'B';              // Tipo B para costo entre 30,001 y 60,000
-        utilidad = costo * 0.4;  // Utilidad del 40% del costo
-    } else if (costo > 60000) {
-        tipo = 'C';              // Tipo C para costo > 60,000
-        utilidad = costo * 0.3;  // Utilidad del 30% del costo
+    if (costo <= 30000)
+        caso = 1;
+    else if (costo > 30000 && costo <= 60000)
+        caso = 2;
+    else if (costo > 60000)
+        caso = 3;
+
+    // Usar switch con la categoría
+    switch (caso) {
+        case 1:
+            tipo = 'A';
+            utilidad = costo * 0.5;
+            break;
+        case 2:
+            tipo = 'B';
+            utilidad = costo * 0.4;
+            break;
+        case 3:
+            tipo = 'C';
+            utilidad = costo * 0.3;
+            break;
     }
     // Porcentaje de utilidad se calcula como (parte * 100) / total
     // En este caso, parte es la utilidad y total es el costo
@@ -55,10 +66,9 @@ int main() {
     cout << "TIPO: " << tipo << endl;
     cout << "DESCRIPCION: " << descripcion << endl;
     cout << "TALLA: " << talla << endl;
-    cout << "DISPONIBILIDAD: "
-         << (disponibilidad == 'S' || disponibilidad == 's' ? "Disponible"
-                                                            : "No disponible")
-         << endl;
+    cout << "DISPONIBILIDAD: " << disponibilidad == 'S' || disponibilidad == 's'
+        ? "Disponible"
+        : "No disponible" << endl;
     cout << "CANTIDAD DE ZAPATOS: " << cantidad << endl;
     cout << "COSTO UNIDAD: $" << costo << endl;
     cout << "COSTO TOTAL: $" << costoTotal << endl;

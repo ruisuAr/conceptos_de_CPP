@@ -1,6 +1,5 @@
+// Módulo y estructura del lenguaje C++
 // Generar pagos de nómina
-// Módulo y estructura del lenguaje C++: Actividad 3 - Evidencia 2
-// Desarrollado por Luis Manuel Ariza Pineda
 
 #include <cstdlib>
 #include <iostream>

@@ -1,6 +1,5 @@
+// Estructura del lenguaje C++
 // Asistente de venta de Sofia, version 4
-// Estructura del lenguaje C++: Actividad 4 - Evidencia 3
-// Desarrollado por Luis Manuel Ariza Pineda
 
 #include <iostream>
 using namespace std;

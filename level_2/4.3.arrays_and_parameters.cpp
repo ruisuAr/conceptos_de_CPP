@@ -1,7 +1,6 @@
+// Módulo y estructura del lenguaje C++
 // Programa 3:
 // Aplicación de arreglos como parámetro de funciones
-// Módulo y estructura del lenguaje C++: Actividad 4 - Evidencia 2
-// Desarrollado por Luis Manuel Ariza Pineda
 
 #include <cmath>
 #include <iostream>

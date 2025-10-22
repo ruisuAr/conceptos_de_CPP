@@ -1,24 +1,21 @@
-// Asistente de venta de Sofia, version 2
-// Estructura del lenguaje C++: Actividad 2 - Evidencia 2
-// Desarrollado por Luis Manuel Ariza Pineda
+// Estructura del lenguaje C++
+// Asistente de venta de Sofia, version 3
 
 #include <iostream>
 using namespace std;
 
 int main() {
-    int referencia, talla, cantidad{0}, costo, costoTotal, precioVenta,
-        precioTotal, utilidad, utilidadTotal;
+    int talla, cantidad{0}, costo, costoTotal, precioVenta, precioTotal,
+        utilidad, utilidadTotal;
     float porcentajeUtilidad;
-    char descripcion[50], disponibilidad;
-    // Verificamos que la disponibilidad sea S o N
+    char referencia[15], descripcion[40], disponibilidad, tipo;
 
     cout << "ADMINISTRAR VENTAS DE ZAPATOS" << endl;
     cout << "==============================" << endl;
     cout << "Digite la referencia del zapato..." << endl;
-    cin >> referencia;
-    cin.ignore();  // Limpiar el buffer de entrada ('cin' anterior a getline)
+    cin.getline(referencia, 15);
     cout << "Digite una descripcion del zapato..." << endl;
-    cin.getline(descripcion, 50);
+    cin.getline(descripcion, 40);
     cout << "Digite la talla del zapato..." << endl;
     cin >> talla;
     cout << "Digite la S o N si esta disponible o no para la venta..." << endl;
@@ -29,28 +26,38 @@ int main() {
     }
     cout << "Digite el costo del zapato..." << endl;
     cin >> costo;
-    cout << "Digite el precio de venta del zapato..." << endl;
-    cin >> precioVenta;
-    // Calcular el costo total, precio total, utilidad y porcentaje de
-    // utilidad
-    costoTotal = costo * cantidad;
-    precioTotal = precioVenta * cantidad;
-    utilidad = precioVenta - costo;
-    utilidadTotal = utilidad * cantidad;
+    // Calcular la utilidad, precio de venta, y porcentaje de utilidad
+    if (costo <= 30000) {
+        tipo = 'A';              // Tipo A para costo <= 30,000
+        utilidad = costo * 0.5;  // Utilidad del 50% del costo
+    } else if (costo > 30000 && costo <= 60000) {
+        tipo = 'B';              // Tipo B para costo entre 30,001 y 60,000
+        utilidad = costo * 0.4;  // Utilidad del 40% del costo
+    } else if (costo > 60000) {
+        tipo = 'C';              // Tipo C para costo > 60,000
+        utilidad = costo * 0.3;  // Utilidad del 30% del costo
+    }
     // Porcentaje de utilidad se calcula como (parte * 100) / total
     // En este caso, parte es la utilidad y total es el costo
     porcentajeUtilidad = (utilidad * 100) / costo;
+    precioVenta = costo + utilidad;
+    costoTotal = costo * cantidad;
+    precioTotal = precioVenta * cantidad;
+    utilidadTotal = utilidad * cantidad;
+
     // Limpiar la consola
     system("clear");
     // Mostrar los datos ingresados y calculados
     cout << "LOS DATOS REGISTRADOS SON LOS SIGUIENTES" << endl;
     cout << "=========================================\n" << endl;
     cout << "REFERENCIA: " << referencia << endl;
+    cout << "TIPO: " << tipo << endl;
     cout << "DESCRIPCION: " << descripcion << endl;
     cout << "TALLA: " << talla << endl;
-    cout << "DISPONIBILIDAD: " << disponibilidad == 'S' || disponibilidad == 's'
-        ? "Disponible"
-        : "No disponible" << endl;
+    cout << "DISPONIBILIDAD: "
+         << (disponibilidad == 'S' || disponibilidad == 's' ? "Disponible"
+                                                            : "No disponible")
+         << endl;
     cout << "CANTIDAD DE ZAPATOS: " << cantidad << endl;
     cout << "COSTO UNIDAD: $" << costo << endl;
     cout << "COSTO TOTAL: $" << costoTotal << endl;

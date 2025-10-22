@@ -1,6 +1,5 @@
+// Módulo y estructura del lenguaje C++
 // Calcular area y perímetro de figuras geométricas
-// Módulo y estructura del lenguaje C++: Actividad 3 - Evidencia 2
-// Desarrollado por Luis Manuel Ariza Pineda
 
 #include <cmath>
 #include <iostream>

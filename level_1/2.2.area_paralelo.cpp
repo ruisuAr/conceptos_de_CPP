@@ -1,6 +1,5 @@
+// Estructura del lenguaje C++
 // Calcular area de un paralelogramo
-// Desarrollado por Luis Manuel Ariza
-// Estructura del lenguaje C++: Actividad 2 - Evidencia 1
 
 #include <iostream>
 using namespace std;

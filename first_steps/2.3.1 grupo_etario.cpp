@@ -1,5 +1,4 @@
-// Conceptualization del lenguaje C++: Actividad 3 - Evidencia 1
-// Desarrollado por Luis Ariza
+// Conceptualization del lenguaje C++
 // Programa que determina el grupo etario de un hijo según su edad
 
 #include <iostream>

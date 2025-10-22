@@ -1,5 +1,4 @@
-// Conceptualization del lenguaje C++: Actividad 3 - Evidencia 2
-// Desarrollado por Luis Ariza
+// Conceptualization del lenguaje C++
 // Programa que calcula el promedio de 4 notas y determina si el
 // estudiante está aprobado o no.
 
@@ -22,10 +21,9 @@ int main() {
 
     if (promedio >= 3 && promedio <= 5) {
         if (promedio == 3 || promedio < 3.5) {
-            cout
-                << "En este momento no tiene aprobada la materia de "
-                   "tecnologia, pero tiene la oportunidad de recuperar."
-                << endl;
+            cout << "En este momento no tiene aprobada la materia de "
+                    "tecnologia, pero tiene la oportunidad de recuperar."
+                 << endl;
         } else {
             cout << promedio << " Aprobado" << endl;
         }

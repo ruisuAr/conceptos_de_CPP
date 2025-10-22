@@ -1,5 +1,4 @@
-// Conceptualization del lenguaje C++: Actividad 4 - Evidencia 2
-// Desarrollado por Luis Ariza
+// Conceptualization del lenguaje C++
 /*
 Hacer un algoritmo que permita calcular el promedio de notas de un
 estudiante y que permita ingresar notas hasta que el usuario decida
@@ -14,8 +13,7 @@ int main() {
     int op, total_notas;
     float sum_notas, promedio;
 
-    cout << "Recuerde que las notas deben estar entre 0.0 y 5.0"
-         << endl;
+    cout << "Recuerde que las notas deben estar entre 0.0 y 5.0" << endl;
 
     int i = 0;
     do {
@@ -24,16 +22,14 @@ int main() {
         cin >> nota;
 
         if (nota < 0 || nota > 5) {
-            cout << "Nota no válida. Debe estar entre 0.0 y 5.0."
-                 << endl;
+            cout << "Nota no válida. Debe estar entre 0.0 y 5.0." << endl;
             continue;  // Pide la nota nuevamente
         }
 
         sum_notas += nota;
         i++;
 
-        cout
-            << "Presione '1' para continuar, '0' para saber promedio: ";
+        cout << "Presione '1' para continuar, '0' para saber promedio: ";
         cin >> op;
 
     } while (op == 1);

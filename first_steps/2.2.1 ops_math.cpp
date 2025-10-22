@@ -1,5 +1,4 @@
-// Conceptualization del lenguaje C++: Actividad 2 - Evidencia 1
-// Desarrollado por Luis Ariza
+// Conceptualization del lenguaje C++
 
 // Este es un comentario de linea
 

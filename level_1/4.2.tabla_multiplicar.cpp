@@ -1,5 +1,5 @@
-// Estructura del lenguaje C++: Actividad 4 - Evidencia 2
-// Desarrollado por Luis Manuel Ariza Pineda
+// Estructura del lenguaje C++
+// Tabla de multiplicar
 
 #include <iostream>
 using namespace std;

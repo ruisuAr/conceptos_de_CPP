@@ -1,6 +1,5 @@
+// Estructura del lenguaje C++
 // Calcular area de un triángulo
-// Desarrollado por Luis Manuel Ariza Pineda
-// Estructura del lenguaje C++: Actividad 2 - Evidencia 1
 
 #include <iostream>
 using namespace std;

@@ -1,6 +1,5 @@
+// Módulo y estructura del lenguaje C++
 // Módulo de empleados
-// Módulo y estructura del lenguaje C++: Actividad 2 - Evidencia 2
-// Desarrollado por Luis Manuel Ariza Pineda
 
 #include <cstdlib>
 #include <iostream>

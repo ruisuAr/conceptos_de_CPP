@@ -1,7 +1,6 @@
+// Módulo y estructura del lenguaje C++
 // Programa 1:
 // Calcular y mostrar en pantalla el costo de envío de productos
-// Módulo y estructura del lenguaje C++: Actividad 4 - Evidencia 2
-// Desarrollado por Luis Manuel Ariza Pineda
 
 #include <iostream>
 using namespace std;

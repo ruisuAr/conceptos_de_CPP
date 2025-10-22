@@ -1,5 +1,4 @@
-// Conceptualization del lenguaje C++: Actividad 2 - Evidencia 2.1
-// Desarrollado por Luis Ariza
+// Conceptualization del lenguaje C++
 // Programa que calcula la aceleración de un vehículo
 
 #include <iostream>
@@ -17,8 +16,7 @@ int main() {
     // Formula para calcular la aceleración
     a = (vf - vi) / t;
 
-    cout << "La aceleracion del vehiculo es de: " << a << "m/s^2"
-         << endl;
+    cout << "La aceleracion del vehiculo es de: " << a << "m/s^2" << endl;
 
     return 0;
 }
