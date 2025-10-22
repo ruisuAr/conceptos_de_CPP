@@ -1,6 +1,4 @@
-# Aprendiendo algoritmos y lógica de programación con C++
-
-# Learning algorithms and programming logic with C++
+# Algoritmos y lógica de programación con C++
 
 ## Introducción
 
