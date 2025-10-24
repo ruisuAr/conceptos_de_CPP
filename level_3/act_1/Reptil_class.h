@@ -16,12 +16,13 @@ class Reptil : public zoologico::Animal {
     // Métodos específicos
     void mudarPiel();
     void Mordida();
-    void hacerSonido() override { std::cout << sonido << std::endl; };
-
     void showTipoEscamas() { std::cout << tipoEscamas_ << std::endl; }
     void showEsVenenoso() {
         std::cout << (esVenenoso_ ? "Sí" : "No") << std::endl;
     }
+
+    // Método sobrescrito, se ejecuta el de la clase base
+    // void hacerSonido() override { std::cout << sonido << std::endl; };
 };
 
 }  // namespace reptil

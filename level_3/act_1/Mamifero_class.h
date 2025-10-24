@@ -14,8 +14,6 @@ class Mamifero : public zoologico::Animal {
 
     // Métodos específicos
     void amamantar();
-    void hacerSonido() override { std::cout << sonido << std::endl; };
-
     void showColorPelo() { std::cout << colorPelo_ << std::endl; }
     void showTipoPelaje() { std::cout << tipoPelaje_ << std::endl; }
 };

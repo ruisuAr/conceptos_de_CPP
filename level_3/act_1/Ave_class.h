@@ -16,10 +16,8 @@ class Ave : public zoologico::Animal {
 
     // Métodos específicos
     void volar();
-    void hacerSonido() override { std::cout << sonido << std::endl; };
-
     void showLongitudPico() { std::cout << longitudPico_ << std::endl; }
     void showColorPlumas() { std::cout << colorPlumas_ << std::endl; }
 };
 
-}
+}  // namespace ave
