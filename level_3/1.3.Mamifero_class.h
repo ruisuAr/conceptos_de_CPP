@@ -1,4 +1,4 @@
-#include "Animal_class.h"
+#include "1.2.Animal_class.h"
 
 namespace mamifero {
 
@@ -16,6 +16,8 @@ class Mamifero : public zoologico::Animal {
     void amamantar();
     void showColorPelo() { std::cout << colorPelo_ << std::endl; }
     void showTipoPelaje() { std::cout << tipoPelaje_ << std::endl; }
+    // Método sobrescrito, se ejecuta el de la clase base
+    // void hacerSonido() override { std::cout << sonido << std::endl; };
 };
 
 }  // namespace mamifero

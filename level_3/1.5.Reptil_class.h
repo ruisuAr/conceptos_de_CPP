@@ -1,4 +1,4 @@
-#include "Animal_class.h"
+#include "1.2.Animal_class.h"
 
 namespace reptil {
 
@@ -20,9 +20,6 @@ class Reptil : public zoologico::Animal {
     void showEsVenenoso() {
         std::cout << (esVenenoso_ ? "Sí" : "No") << std::endl;
     }
-
-    // Método sobrescrito, se ejecuta el de la clase base
-    // void hacerSonido() override { std::cout << sonido << std::endl; };
 };
 
 }  // namespace reptil

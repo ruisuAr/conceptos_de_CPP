@@ -2,9 +2,9 @@
 
 #include <iostream>
 
-#include "Ave_class.h"
-#include "Mamifero_class.h"
-#include "Reptil_class.h"
+#include "1.3.Mamifero_class.h"
+#include "1.4.Ave_class.h"
+#include "1.5.Reptil_class.h"
 
 using namespace std;
 
@@ -47,15 +47,14 @@ Ave::Ave(string n, float w, string tf, string s, float beakLength,
 
 // Métodos específicos
 void Ave::volar() {
-    if (puedeVolar_)
-        cout << getRaza() << " está volando" << endl;
-    else
-        cout << getRaza() << " no puede volar" << endl;
+    puedeVolar_ ? cout << getRaza() << " está volando" << endl
+                : cout << getRaza() << " no puede volar" << endl;
 }
 
 }  // namespace ave
 
 namespace reptil {
+
 // Constructor
 Reptil::Reptil(string n, float w, string tf, string s, string scaleType,
                bool venomous)
@@ -67,10 +66,9 @@ void Reptil::mudarPiel() {
     cout << getRaza() << " está mudando su piel" << endl;
 }
 void Reptil::Mordida() {
-    if (esVenenoso_)
-        cout << getRaza() << " ha mordido y es venenoso!" << endl;
-    else
-        cout << getRaza() << " ha mordido pero no es venenoso" << endl;
+    esVenenoso_
+        ? cout << getRaza() << " ha mordido y es venenoso!" << endl
+        : cout << getRaza() << " ha mordido pero no es venenoso" << endl;
 }
 
 }  // namespace reptil
