@@ -1,6 +1,6 @@
 #include "1.2.Animal_class.h"
 
-namespace ave {
+namespace zoologico {
 
 class Ave : public zoologico::Animal {
    private:
@@ -11,13 +11,22 @@ class Ave : public zoologico::Animal {
 
    public:
     // Constructor
-    Ave(std::string n, float w, std::string tf, std::string s, float beakLength,
-        std::string featherColor, bool canFly);
+    Ave(const std::string& n, float w, const std::string& tf,
+        const std::string& s, float beakLength, const std::string& featherColor,
+        bool canFly);
 
     // Métodos específicos
     void volar();
-    void showLongitudPico() { std::cout << longitudPico_ << std::endl; }
-    void showColorPlumas() { std::cout << colorPlumas_ << std::endl; }
+    // Método sobrescrito por polimorfismo
+    void hacerSonido() override {
+        std::cout << getEspecie() << " canta con " << sonido << '\n';
+    }
+    // Getters específicos
+    void mostrarInfo() const override {
+        Animal::mostrarInfo();
+        std::cout << "Longitud del pico: " << longitudPico_ << "cm\n"
+                  << "Color de las plumas: " << colorPlumas_ << "\n";
+    }
 };
 
-}  // namespace ave
+}  // namespace zoologico

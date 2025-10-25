@@ -1,6 +1,6 @@
 #include "1.2.Animal_class.h"
 
-namespace mamifero {
+namespace zoologico {
 
 class Mamifero : public zoologico::Animal {
    private:
@@ -9,15 +9,22 @@ class Mamifero : public zoologico::Animal {
 
    public:
     // Constructor
-    Mamifero(std::string n, float w, std::string tf, std::string s,
-             std::string furColor, std::string furType);
+    Mamifero(const std::string& n, float w, const std::string& tf,
+             const std::string& s, const std::string& furColor,
+             const std::string& furType);
 
     // Métodos específicos
     void amamantar();
-    void showColorPelo() { std::cout << colorPelo_ << std::endl; }
-    void showTipoPelaje() { std::cout << tipoPelaje_ << std::endl; }
-    // Método sobrescrito, se ejecuta el de la clase base
-    // void hacerSonido() override { std::cout << sonido << std::endl; };
+    // Método sobrescrito por polimorfismo
+    void hacerSonido() override {
+        std::cout << getEspecie() << " ha hecho un " << sonido << '\n';
+    }
+    // Getters específicos
+    void mostrarInfo() const override {
+        Animal::mostrarInfo();
+        std::cout << "Color del pelo: " << colorPelo_ << "\n"
+                  << "Tipo de pelaje: " << tipoPelaje_ << "\n";
+    }
 };
 
-}  // namespace mamifero
+}  // namespace zoologico

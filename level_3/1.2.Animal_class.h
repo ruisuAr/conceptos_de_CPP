@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include <string>
 
 namespace zoologico {
@@ -6,32 +7,33 @@ namespace zoologico {
 class Animal {
    private:
     // Atributos
-    std::string raza_, tipoALimentacion_;
+    std::string especie_, alimentacion_;
     float peso_;
 
    protected:
-    // Atributos accesibles para clases derivadas
     std::string sonido;
 
    public:
     // Constructor
-    Animal(std::string name, float weight, std::string typeFood,
-           std::string sound);
+    Animal(const std::string& name, float weight, const std::string& typeFood,
+           const std::string& sound);
     // Destructor
-    ~Animal() {
-        std::cout << "\nDestructor del que hace " << sonido << std::endl;
-    };
+    virtual ~Animal() {
+        std::cout << "\nDestructor del objeto " << getEspecie() << '\n';
+    }
 
     // Métodos
     void comer();
-    void showRaza() { std::cout << raza_ << std::endl; }
-    void showPeso() { std::cout << peso_ << std::endl; }
-    void showAlimentacion() { std::cout << tipoALimentacion_ << std::endl; }
     // Método heredado y polimórfico
-    virtual void hacerSonido() { std::cout << sonido << std::endl; };
+    virtual void hacerSonido() { std::cout << sonido << " generico\n"; }
 
     // Getters
-    std::string getRaza() const { return raza_; }
+    std::string getEspecie() const { return especie_; }
+    virtual void mostrarInfo() const {
+        std::cout << "Especie: " << especie_ << "\n"
+                  << "Peso: " << peso_ << "kg\n"
+                  << "Alimentación: " << alimentacion_ << "\n";
+    }
 };
 
 }  // namespace zoologico
