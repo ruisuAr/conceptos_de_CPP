@@ -4,14 +4,15 @@
 
 #include <cmath>
 #include <iostream>
+#include <limits>  // asegurarse de incluir en el archivo real
 using namespace std;
 
 // Prototipo de la funciones
-void agregarElementos(int*, int);
-void mostrarElementos(int*, int);
+void agregarElementos(int*, size_t);
+void mostrarElementos(int*, size_t);
 
 int main() {
-    int cant_elementos;
+    size_t cant_elementos;
 
     cout << "Programa #3:" << endl;
     cout << "APLICAR ARREGLOS COMO PARAMETRO DE FUNCIONES\n" << endl;
@@ -31,15 +32,22 @@ int main() {
     return 0;
 }
 
-void agregarElementos(int* arreglo, int cant_elementos) {
-    for (int i = 0; i < cant_elementos; i++) {
-        cout << "Elemento " << (i + 1) << ": ";
-        cin >> arreglo[i];
+void agregarElementos(int* arreglo, size_t cant_elementos) {
+    if (!arreglo) return;  // prevenir nullptr
+
+    for (size_t i{0}; i < cant_elementos; ++i) {
+        std::cout << "Elemento " << (i + 1) << ": ";
+        if (!(std::cin >> arreglo[i])) {
+            std::cerr << "Entrada inválida. Reinserte el valor.\n";
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            --i;  // repetir la posición
+        }
     }
 }
 
-void mostrarElementos(int* arreglo, int cant_elementos) {
-    for (int i = 0; i < cant_elementos; i++) {
+void mostrarElementos(int* arreglo, size_t cant_elementos) {
+    for (size_t i{0}; i < cant_elementos; i++) {
         cout << "Elemento " << (i + 1) << ": " << pow(arreglo[i], 3) << endl;
     }
 }
